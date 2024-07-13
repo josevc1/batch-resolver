@@ -14,7 +14,6 @@ export default defineConfig({
   build: {
     rollupOptions: {
       plugins: [inject({ Buffer: ["Buffer", "Buffer"] })],
-      external: ['Buffer'] // Add 'Buffer' to the list of externals
     },
   },
 });
