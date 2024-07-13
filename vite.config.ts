@@ -17,3 +17,11 @@ export default defineConfig({
     },
   },
 });
+
+export default {
+  build: {
+    rollupOptions: {
+      external: ['Buffer']
+    }
+  }
+}
