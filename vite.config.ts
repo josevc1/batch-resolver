@@ -13,7 +13,7 @@ export default defineConfig({
   },
   build: {
     rollupOptions: {
-      external: [inject({ Buffer: ["Buffer", "Buffer"] })],
+      plugins: [inject({ Buffer: ["Buffer", "Buffer"] })],
     },
   },
 });
